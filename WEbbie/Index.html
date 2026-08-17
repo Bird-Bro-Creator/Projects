@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <nav class="navbar">
+      <h2 class="logo">TechNova</h2>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="themeBtn">🌙</button>
+        <button class="menu-btn" id="menuBtn">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Build Modern Digital Solutions</h1>
+      <p>
+        We create advanced, responsive, and interactive websites for businesses,
+        portfolios, and online platforms.
+      </p>
+      <button class="primary-btn" onclick="scrollToSection('projects')">
+        View Projects
+      </button>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="cards">
+      <div class="card reveal">
+        <h3>Web Design</h3>
+        <p>Clean, modern, and responsive designs for all screen sizes.</p>
+      </div>
+
+      <div class="card reveal">
+        <h3>Frontend Development</h3>
+        <p>Interactive interfaces using HTML, CSS, JavaScript, and frameworks.</p>
+      </div>
+
+      <div class="card reveal">
+        <h3>Backend Systems</h3>
+        <p>Secure databases, APIs, authentication, and server-side logic.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="filter-box">
+      <input type="text" id="searchInput" placeholder="Search projects..." />
+
+      <select id="categoryFilter">
+        <option value="all">All</option>
+        <option value="web">Web</option>
+        <option value="app">App</option>
+        <option value="dashboard">Dashboard</option>
+      </select>
+    </div>
+
+    <div class="project-grid" id="projectGrid"></div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <h2 class="section-title">Contact Us</h2>
+
+    <form id="contactForm" class="contact-form">
+      <input type="text" id="name" placeholder="Your Name" />
+      <input type="email" id="email" placeholder="Your Email" />
+      <textarea id="message" placeholder="Your Message"></textarea>
+      <button type="submit" class="primary-btn">Send Message</button>
+    </form>
+  </section>
+
+  <div class="modal" id="projectModal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <footer>
+    <p>&copy; 2026 TechNova. All rights reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
