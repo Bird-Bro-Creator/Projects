@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechNova Solutions | Full Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#home" class="logo">
+        <span class="logo-icon">TN</span>
+        <span>TechNova</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content reveal">
+        <p class="eyebrow">Modern Web Development Agency</p>
+        <h1>We build fast, clean, and professional websites.</h1>
+        <p class="hero-text">
+          TechNova helps small businesses, students, creators, and startups launch
+          powerful digital platforms with beautiful design and reliable code.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary-btn">View Our Work</a>
+          <a href="#contact" class="btn secondary-btn">Start a Project</a>
+        </div>
+
+        <div class="hero-stats">
+          <div>
+            <strong>120+</strong>
+            <span>Projects</span>
+          </div>
+          <div>
+            <strong>98%</strong>
+            <span>Client Rating</span>
+          </div>
+          <div>
+            <strong>24/7</strong>
+            <span>Support</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card reveal">
+        <div class="browser-bar">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="dashboard-preview">
+          <div class="preview-line large"></div>
+          <div class="preview-grid">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="preview-chart">
+            <span style="height: 35%"></span>
+            <span style="height: 60%"></span>
+            <span style="height: 45%"></span>
+            <span style="height: 80%"></span>
+            <span style="height: 55%"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section about" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">About Us</p>
+        <h2>Digital solutions built with purpose.</h2>
+        <p>
+          We focus on creating websites that are responsive, easy to use, and
+          simple to maintain. Every project is designed to look good and work well.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <h3>Our Mission</h3>
+          <p>
+            To help people and businesses build a strong online presence through
+            professional websites, smart design, and clean development practices.
+          </p>
+        </div>
+
+        <div class="about-card reveal">
+          <h3>Our Vision</h3>
+          <p>
+            To become a trusted web development partner for modern brands,
+            students, startups, and growing organizations.
+          </p>
+        </div>
+
+        <div class="about-card reveal">
+          <h3>Our Values</h3>
+          <p>
+            Accuracy, creativity, communication, security, and quality are at the
+            center of every project we complete.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section services" id="services">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Services</p>
+        <h2>What we can build for you.</h2>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card reveal">
+          <div class="card-icon">💻</div>
+          <h3>Business Websites</h3>
+          <p>Professional websites for companies, brands, and personal portfolios.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="card-icon">🛒</div>
+          <h3>E-commerce Design</h3>
+          <p>Online shop layouts with product cards, filtering, and cart-ready UI.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="card-icon">📊</div>
+          <h3>Dashboards</h3>
+          <p>Admin panels, analytics dashboards, tables, charts, and data layouts.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="card-icon">📱</div>
+          <h3>Responsive UI</h3>
+          <p>Designs that work smoothly on phones, tablets, laptops, and desktops.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="card-icon">🔐</div>
+          <h3>Authentication UI</h3>
+          <p>Login, signup, password reset, and user profile interface designs.</p>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="card-icon">⚙️</div>
+          <h3>Frontend Logic</h3>
+          <p>Search, filtering, modals, forms, validation, tabs, accordions, and more.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section projects" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Projects</p>
+        <h2>Explore our sample work.</h2>
+      </div>
+
+      <div class="project-controls reveal">
+        <input type="text" id="projectSearch" placeholder="Search projects..." />
+        <select id="projectFilter">
+          <option value="all">All Categories</option>
+          <option value="web">Websites</option>
+          <option value="app">Apps</option>
+          <option value="dashboard">Dashboards</option>
+        </select>
+      </div>
+
+      <div class="project-grid" id="projectGrid"></div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section pricing" id="pricing">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Pricing</p>
+        <h2>Choose a package.</h2>
+      </div>
+
+      <div class="pricing-grid">
+        <article class="price-card reveal">
+          <h3>Starter</h3>
+          <p class="price">R999</p>
+          <p>Best for simple personal or student websites.</p>
+          <ul>
+            <li>One-page website</li>
+            <li>Responsive design</li>
+            <li>Contact section</li>
+            <li>Basic animations</li>
+          </ul>
+          <a href="#contact" class="btn secondary-btn">Choose Starter</a>
+        </article>
+
+        <article class="price-card featured reveal">
+          <span class="badge">Popular</span>
+          <h3>Professional</h3>
+          <p class="price">R2,499</p>
+          <p>Best for businesses that need a stronger online presence.</p>
+          <ul>
+            <li>Multi-section website</li>
+            <li>Search and filter features</li>
+            <li>Form validation</li>
+            <li>Dark mode support</li>
+          </ul>
+          <a href="#contact" class="btn primary-btn">Choose Professional</a>
+        </article>
+
+        <article class="price-card reveal">
+          <h3>Advanced</h3>
+          <p class="price">R4,999</p>
+          <p>Best for dashboards, custom layouts, and advanced UI features.</p>
+          <ul>
+            <li>Dashboard interface</li>
+            <li>Custom JavaScript logic</li>
+            <li>Advanced components</li>
+            <li>Project consultation</li>
+          </ul>
+          <a href="#contact" class="btn secondary-btn">Choose Advanced</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials" id="testimonials">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Testimonials</p>
+        <h2>What clients say.</h2>
+      </div>
+
+      <div class="testimonial-box reveal">
+        <button class="slider-btn" id="prevTestimonial">‹</button>
+
+        <article class="testimonial-card">
+          <p id="testimonialText"></p>
+          <h3 id="testimonialName"></h3>
+          <span id="testimonialRole"></span>
+        </article>
+
+        <button class="slider-btn" id="nextTestimonial">›</button>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq" id="faq">
+      <div class="section-heading reveal">
+        <p class="eyebrow">FAQ</p>
+        <h2>Common questions.</h2>
+      </div>
+
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-question">Do I need coding knowledge to use this website?</button>
+          <div class="faq-answer">
+            <p>No. You can edit the text, images, colors, and sections without needing advanced coding knowledge.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Can this website work on phones?</button>
+          <div class="faq-answer">
+            <p>Yes. The website is responsive, meaning it adjusts to mobile, tablet, and desktop screens.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Is this connected to a database?</button>
+          <div class="faq-answer">
+            <p>No. This version is frontend-only. You can later connect it to Firebase, Supabase, Node.js, PHP, or another backend.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Can I use this for a portfolio?</button>
+          <div class="faq-answer">
+            <p>Yes. You can change the company content into your own personal portfolio information.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Start your website project.</h2>
+      </div>
+
+      <div class="contact-grid">
+        <form class="contact-form reveal" id="contactForm">
+          <div class="input-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name" />
+            <small></small>
+          </div>
+
+          <div class="input-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email" />
+            <small></small>
+          </div>
+
+          <div class="input-group">
+            <label for="service">Service Needed</label>
+            <select id="service">
+              <option value="">Select a service</option>
+              <option value="Business Website">Business Website</option>
+              <option value="Portfolio Website">Portfolio Website</option>
+              <option value="Dashboard">Dashboard</option>
+              <option value="Responsive UI">Responsive UI</option>
+            </select>
+            <small></small>
+          </div>
+
+          <div class="input-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Tell us about your project"></textarea>
+            <small></small>
+          </div>
+
+          <button type="submit" class="btn primary-btn">Send Message</button>
+        </form>
+
+        <aside class="contact-info reveal">
+          <h3>Contact Details</h3>
+          <p><strong>Email:</strong> hello@technova.example</p>
+          <p><strong>Phone:</strong> +27 00 000 0000</p>
+          <p><strong>Location:</strong> South Africa</p>
+
+          <div class="info-box">
+            <h4>Working Hours</h4>
+            <p>Monday - Friday</p>
+            <p>08:00 - 17:00</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal" id="projectModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">×</button>
+      <h2 id="modalTitle"></h2>
+      <p id="modalCategory"></p>
+      <p id="modalDescription"></p>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <h3>TechNova</h3>
+        <p>Building clean, responsive, and modern websites.</p>
+      </div>
+
+      <div>
+        <h4>Links</h4>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div>
+        <h4>Services</h4>
+        <a href="#services">Web Design</a>
+        <a href="#services">Dashboards</a>
+        <a href="#services">Responsive UI</a>
+        <a href="#services">Frontend Logic</a>
+      </div>
+    </div>
+
+    <p class="footer-bottom">&copy; 2026 TechNova Solutions. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
